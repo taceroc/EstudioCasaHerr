@@ -8,7 +8,7 @@ int main(void)
 
 {
  
-  int Nmax = 100;
+  int Nmax = 1000;
     for(int i = 1; i<=Nmax; i++)
       {
         float a = fabs((s(i)-S(i))/(S(i)+s(i)));
