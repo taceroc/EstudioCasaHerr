@@ -1,0 +1,22 @@
+all: entero.o doble.o flotante.o limites.x limites.txt
+
+entero.o : entero.cpp
+	 g++ -c $< -o $@   
+
+doble.o : doble.cpp
+	 g++ -c $< -o $@
+
+flotante.o: flotante.cpp
+	    g++ -c $< -o $@
+	 
+%.x : %.cpp
+	 g++ $^ -o $@
+
+limites.x: limites.cpp entero.o doble.o flotante.o
+
+limites.txt: limites.x
+	     ./limites.x > limites.txt
+	     
+.PHONY: clean
+clean:
+	rm -f *.o *.x
