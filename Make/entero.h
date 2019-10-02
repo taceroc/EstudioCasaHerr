@@ -1,0 +1,1 @@
+int entero(int a);
