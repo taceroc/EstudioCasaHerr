@@ -1,0 +1,9 @@
+#github: *.cpp
+	#git add $^
+	#git commit
+	#git push
+
+
+.PHONY: clean
+clean:
+	rm -f *~ a.out *.x *#
