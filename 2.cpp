@@ -7,8 +7,8 @@ int main(void)
 
 {
   double a = 1;
-  double b = 1;
-  double c = 1;
+  double b = 5;
+  double c = 6;
   double discrim;
   double realpart;
   double imgpart;
@@ -18,8 +18,8 @@ int main(void)
 
   if(discrim > 0)
     {
-      x1 =(-b + sqrt(discrim))/(2*a);
-      x2 =(-b - sqrt(discrim))/(2*a);
+      x1 =(-2*c)/ (b + sqrt(discrim));
+      x2 =(-2*c)/ (b - sqrt(discrim));
       std::printf("La raiz positiva es = %.16f\n", x1);
       std::printf("La raiz negativa es = %.16f\n", x2);
 
