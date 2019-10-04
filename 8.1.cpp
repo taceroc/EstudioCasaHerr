@@ -11,7 +11,10 @@ int main(void)
    {
       S = 1.0/n + S;
       L = S - log(n + 0.5);
-      std::printf("%d %f\n",n,L);
+      if (abs(L-0.57721) < 6e-6){
+	std::printf("%d %f\n",n,L);
+        break;}
+     
    }
   return 0;
 
