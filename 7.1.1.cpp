@@ -4,7 +4,7 @@
 int main(void)
 
 {
-  int n; double nmax = 5000; double S = 0;
+  int n; double nmax = 5000.0; double S = 0.0;
   double L;
   const double ln = log(nmax);
   for(n = 1.0; n <= nmax; n++)
